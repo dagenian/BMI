@@ -1,1 +1,1 @@
-python SoftwareInnovation/app.py
+python SoftwareInnovation/app.py &
