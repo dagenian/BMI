@@ -14,13 +14,13 @@ def main():
     weight=float(request.form['weight'])
     BMI=weight/(height*height)
     if BMI<18.5:
-        note="偏瘦"
+        note="thin"
     elif BMI>=18.5 and BMI<=23.9:
-        note="正常"
+        note="normal"
     elif BMI>23.9 and BMI<=27.9:
-        note="偏胖"
+        note="fat"
     else:
-        note="肥胖"
+        note="very fat"
     return render_template("main.html",BMI=BMI,note=note)
 
 
